@@ -39,3 +39,10 @@ jar {
 //lisätään jacoco -plugin
 apply plugin: "jacoco" 
 
+//Saadaan Codecov tarkkailemaan projektin koodikattavuutta
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
