@@ -43,7 +43,7 @@ jobs:
       
       
       #Codecov:ia varten
-      - run: ./gradlew check
-      - run: ./gradlew jacocoTestReport
+      - run: gradle check
+      - run: gradle jacocoTestReport
       - run: bash <(curl -s https://codecov.io/bash)
       
